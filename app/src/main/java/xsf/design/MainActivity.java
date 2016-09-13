@@ -8,11 +8,13 @@ import xsf.design.Proxy.House;
 import xsf.design.Proxy.IHouse;
 import xsf.design.Proxy.ProxyHandler;
 import xsf.design.Proxy.ProxyHouse;
+import xsf.design.Strategy.StrategyManager;
 import xsf.design.base.BaseActvity;
 
 public class MainActivity extends BaseActvity {
-    private Button btn_mvc;
-    private Button btn_mvp;
+    private Button btn_proxy;
+    private Button btn_dynproxy;
+    private Button btn_strtegy;
 
 
     @Override
@@ -22,10 +24,12 @@ public class MainActivity extends BaseActvity {
 
     @Override
     protected void initView() {
-        btn_mvc = IfindViewById(R.id.btn_proxy);
-        btn_mvc.setOnClickListener(this);
-        btn_mvp = IfindViewById(R.id.btn_dynicprocy);
-        btn_mvp.setOnClickListener(this);
+        btn_proxy = IfindViewById(R.id.btn_proxy);
+        btn_proxy.setOnClickListener(this);
+        btn_dynproxy = IfindViewById(R.id.btn_dynicprocy);
+        btn_dynproxy.setOnClickListener(this);
+        btn_strtegy = IfindViewById(R.id.btn_strategy);
+        btn_strtegy.setOnClickListener(this);
     }
 
     @Override
@@ -37,7 +41,20 @@ public class MainActivity extends BaseActvity {
             case R.id.btn_dynicprocy:
                 dynicProxy();
                 break;
+            case R.id.btn_strategy:
+                strategy();
+                break;
         }
+    }
+
+    /**
+     * 策略模式
+     */
+    private void strategy() {
+
+        StrategyManager strategyManager  = null;
+
+
     }
 
     /**
@@ -46,7 +63,7 @@ public class MainActivity extends BaseActvity {
     private void dynicProxy() {
         final String TAG = "proxy";
         ProxyHandler proxyHandler = new ProxyHandler();
-        IHouse house = (IHouse) proxyHandler.newProxyInstance(new House("xsf house","1700"));
+        IHouse house = (IHouse) proxyHandler.newProxyInstance(new House("xsf house", "1700"));
         Log.i(TAG, "looking for a perfect house");
         house.getHouseInfo();
         Log.i(TAG, "thinking");

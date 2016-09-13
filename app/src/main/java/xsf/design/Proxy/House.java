@@ -5,13 +5,15 @@ import android.util.Log;
 
 import java.text.SimpleDateFormat;
 
+import xsf.design.util.Constant;
+
 /**
  * Author: hzxushangfei
  * Time: created at 2016/9/12.
  * Copyright 2016 Netease. All rights reserved.
  */
 public class House implements IHouse {
-    public final String TAG = "proxy";
+
     public String  name,price;
 
     public House(String name, String price) {
@@ -21,17 +23,17 @@ public class House implements IHouse {
 
     @Override
     public void getHouseInfo() {
-        Log.i(TAG, "House Info- name:" + name + "  price:" + price);
+        Log.i(Constant.PROXY, "House Info- name:" + name + "  price:" + price);
     }
 
     @Override
     public void signContract() {
-        Log.i(TAG, "Contract:" + name + "  signed at" +
+        Log.i(Constant.PROXY, "Contract:" + name + "  signed at" +
                 new SimpleDateFormat("HH:mm:ss").format(SystemClock.uptimeMillis()));
     }
 
     @Override
     public void payFees() {
-        Log.i(TAG, "Bill: name-" + name + "  price" + price);
+        Log.i(Constant.PROXY, "Bill: name-" + name + "  price" + price);
     }
 }

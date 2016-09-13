@@ -6,6 +6,8 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+import xsf.design.util.Constant;
+
 /**
  * 动态代理
  * Author: hzxushangfei
@@ -13,7 +15,7 @@ import java.lang.reflect.Proxy;
  * Copyright 2016 Netease. All rights reserved.
  */
 public class ProxyHandler implements InvocationHandler {
-    private static final String TAG = ProxyHandler.class.getSimpleName();
+
     Object targetObject;
 
     public Object newProxyInstance(Object targetObject) {
@@ -25,7 +27,7 @@ public class ProxyHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object ret;
-        Log.i(TAG, "method name:" + method.getName());
+        Log.i(Constant.PROXY, "method name:" + method.getName());
         ret = method.invoke(targetObject,args);
         return ret;
     }
