@@ -1,9 +1,16 @@
 package xsf.design;
 
+import android.graphics.Bitmap;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import xsf.design.Principle.DiskCache;
+import xsf.design.Principle.DouleCache;
+import xsf.design.Principle.IImageCache;
+import xsf.design.Principle.ImageLoader;
+import xsf.design.Principle.MemoryCache;
 import xsf.design.Proxy.House;
 import xsf.design.Proxy.IHouse;
 import xsf.design.Proxy.ProxyHandler;
@@ -16,9 +23,12 @@ import xsf.design.base.BaseActvity;
 import xsf.design.util.Constant;
 
 public class MainActivity extends BaseActvity {
+    private Button btn_principle;
     private Button btn_proxy;
     private Button btn_dynproxy;
     private Button btn_strtegy;
+
+    private ImageView imgProfile;
 
 
     @Override
@@ -28,17 +38,24 @@ public class MainActivity extends BaseActvity {
 
     @Override
     protected void initView() {
+
+        btn_principle = IfindViewById(R.id.btn_principle);
+        btn_principle.setOnClickListener(this);
         btn_proxy = IfindViewById(R.id.btn_proxy);
         btn_proxy.setOnClickListener(this);
         btn_dynproxy = IfindViewById(R.id.btn_dynicprocy);
         btn_dynproxy.setOnClickListener(this);
         btn_strtegy = IfindViewById(R.id.btn_strategy);
         btn_strtegy.setOnClickListener(this);
+        imgProfile = IfindViewById(R.id.imgProfile);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_principle:
+                Principle();
+                break;
             case R.id.btn_proxy:
                 ProxyTest();
                 break;
@@ -49,6 +66,34 @@ public class MainActivity extends BaseActvity {
                 strategy();
                 break;
         }
+    }
+
+    private void Principle() {
+        ImageLoader imgLodImageLoader = new ImageLoader();
+
+        //设置缓存的方式
+        imgLodImageLoader.setmImageCache(new MemoryCache()); //默认方式
+        imgLodImageLoader.setmImageCache(new DiskCache());//使用磁盘缓存
+        imgLodImageLoader.setmImageCache(new DouleCache());//使用双重缓存
+        //使用自定义缓存
+        imgLodImageLoader.setmImageCache(new IImageCache() {
+            @Override
+            public Bitmap get(String url) {
+                return null;
+            }
+
+            @Override
+            public void put(String url, Bitmap bmp) {
+
+            }
+        });
+
+
+
+        final String imageUrl =Constant.URL_PRIFE;
+        imgLodImageLoader.displayImage(imageUrl,imgProfile);
+
+
     }
 
     /**
