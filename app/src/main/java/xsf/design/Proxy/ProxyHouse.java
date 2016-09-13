@@ -14,6 +14,7 @@ public class ProxyHouse implements IHouse {
     private IHouse house;
 
     public ProxyHouse(IHouse house) {
+        //里氏替换,依赖倒转(面向接口)
         this.house = house;
     }
 
