@@ -34,6 +34,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="strategy（策略模式）"/>
+
+    <Button
+        android:id="@+id/btn_builder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buildr（建造者模式）"/>
     <ImageView
         android:layout_gravity="center_horizontal"
         android:id="@+id/imgProfile"

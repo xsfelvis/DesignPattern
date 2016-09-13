@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import xsf.design.Builder.Builder;
+import xsf.design.Builder.Win7Builder;
 import xsf.design.Principle.DiskCache;
 import xsf.design.Principle.DouleCache;
 import xsf.design.Principle.IImageCache;
@@ -27,6 +29,7 @@ public class MainActivity extends BaseActvity {
     private Button btn_proxy;
     private Button btn_dynproxy;
     private Button btn_strtegy;
+    private Button btn_builder;
 
     private ImageView imgProfile;
 
@@ -48,6 +51,8 @@ public class MainActivity extends BaseActvity {
         btn_strtegy = IfindViewById(R.id.btn_strategy);
         btn_strtegy.setOnClickListener(this);
         imgProfile = IfindViewById(R.id.imgProfile);
+        btn_builder = IfindViewById(R.id.btn_builder);
+        btn_builder.setOnClickListener(this);
     }
 
     @Override
@@ -65,9 +70,30 @@ public class MainActivity extends BaseActvity {
             case R.id.btn_strategy:
                 strategy();
                 break;
+            case R.id.btn_builder:
+                builder();
+                break;
         }
     }
 
+    /**
+     * 建造者模式
+     */
+    private void builder() {
+        Builder builder = new Win7Builder();
+        //Director pcDirector = new Director(builder);
+       // pcDirector.construct("i7", "sunsang");
+        //System.out.printf("pc config " + pcDirector.toString());
+        builder.buildBoard("i7").buildDisplay("sansung").buildos("win7 64").create();
+        //System.out.printf("pc config " + builder.buildBoard("i7").buildDisplay("sansung").create().toString());
+        Log.i("builder",builder.buildBoard("i7").buildDisplay("sansung").create().toString());
+
+
+    }
+
+    /**
+     * 六大原则
+     */
     private void Principle() {
         ImageLoader imgLodImageLoader = new ImageLoader();
 
@@ -89,9 +115,8 @@ public class MainActivity extends BaseActvity {
         });
 
 
-
-        final String imageUrl =Constant.URL_PRIFE;
-        imgLodImageLoader.displayImage(imageUrl,imgProfile);
+        final String imageUrl = Constant.URL_PRIFE;
+        imgLodImageLoader.displayImage(imageUrl, imgProfile);
 
 
     }
