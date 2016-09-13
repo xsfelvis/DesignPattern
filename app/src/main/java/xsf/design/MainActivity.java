@@ -8,8 +8,12 @@ import xsf.design.Proxy.House;
 import xsf.design.Proxy.IHouse;
 import xsf.design.Proxy.ProxyHandler;
 import xsf.design.Proxy.ProxyHouse;
+import xsf.design.Strategy.BackDoor;
+import xsf.design.Strategy.BlockEnemy;
+import xsf.design.Strategy.GreenLight;
 import xsf.design.Strategy.StrategyManager;
 import xsf.design.base.BaseActvity;
+import xsf.design.util.Constant;
 
 public class MainActivity extends BaseActvity {
     private Button btn_proxy;
@@ -51,39 +55,44 @@ public class MainActivity extends BaseActvity {
      * 策略模式
      */
     private void strategy() {
-
-        StrategyManager strategyManager  = null;
-
-
+        StrategyManager strategyManager = null;
+        Log.i(Constant.STRATEGY, "occur problem 1");
+        strategyManager = new StrategyManager(new BackDoor());
+        strategyManager.operation();
+        Log.i(Constant.STRATEGY, "occur problem 2");
+        strategyManager = new StrategyManager(new GreenLight());
+        strategyManager.operation();
+        Log.i(Constant.STRATEGY, "occur problem 3");
+        strategyManager = new StrategyManager(new BlockEnemy());
+        strategyManager.operation();
     }
 
     /**
      * 动态代理模式
      */
     private void dynicProxy() {
-        final String TAG = "proxy";
+
         ProxyHandler proxyHandler = new ProxyHandler();
         IHouse house = (IHouse) proxyHandler.newProxyInstance(new House("xsf house", "1700"));
-        Log.i(TAG, "looking for a perfect house");
+        Log.i(Constant.PROXY, "looking for a perfect house");
         house.getHouseInfo();
-        Log.i(TAG, "thinking");
+        Log.i(Constant.PROXY, "thinking");
         house.signContract();
         house.payFees();
-        Log.i(TAG, "done");
+        Log.i(Constant.PROXY, "done");
     }
 
     /**
      * 普通策略模式
      */
     private void ProxyTest() {
-        final String TAG = "proxy";
         IHouse house = new House("xsf house", "1700");
         IHouse proxyHouse = new ProxyHouse(house);
-        Log.i(TAG, "looking for a perfect house");
+        Log.i(Constant.PROXY, "looking for a perfect house");
         proxyHouse.getHouseInfo();
-        Log.i(TAG, "thinking");
+        Log.i(Constant.PROXY, "thinking");
         proxyHouse.signContract();
         proxyHouse.payFees();
-        Log.i(TAG, "done");
+        Log.i(Constant.PROXY, "done");
     }
 }

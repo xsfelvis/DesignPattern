@@ -24,5 +24,11 @@
         android:layout_height="wrap_content"
         android:text="dycproxy（动态代理）"/>
 
+    <Button
+        android:id="@+id/btn_strategy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="strategy（策略模式）"/>
+
 
 </LinearLayout>
