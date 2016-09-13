@@ -25,6 +25,8 @@ Note：在java中，抽象通常指接口或者抽象类，两者是不能被直
 
 参考资料
 
+《android源码设计模式》
+
 https://github.com/simple-android-framework-exchange/android_design_patterns_analysis/blob/master/oop-principles/oop-principles.md
 
 ##代理模式
