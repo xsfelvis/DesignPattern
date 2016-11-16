@@ -8,6 +8,10 @@ import android.widget.ImageView;
 
 import xsf.design.Builder.Builder;
 import xsf.design.Builder.Win7Builder;
+import xsf.design.Factory.ConcreateFactory;
+import xsf.design.Factory.Factory;
+import xsf.design.Factory.Product;
+import xsf.design.Factory.ProductA;
 import xsf.design.Principle.DiskCache;
 import xsf.design.Principle.DouleCache;
 import xsf.design.Principle.IImageCache;
@@ -30,6 +34,7 @@ public class MainActivity extends BaseActvity {
     private Button btn_dynproxy;
     private Button btn_strtegy;
     private Button btn_builder;
+    private Button btn_factory;
 
     private ImageView imgProfile;
 
@@ -53,6 +58,8 @@ public class MainActivity extends BaseActvity {
         imgProfile = IfindViewById(R.id.imgProfile);
         btn_builder = IfindViewById(R.id.btn_builder);
         btn_builder.setOnClickListener(this);
+        btn_factory = IfindViewById(R.id.btn_factory);
+        btn_factory.setOnClickListener(this);
     }
 
     @Override
@@ -73,7 +80,20 @@ public class MainActivity extends BaseActvity {
             case R.id.btn_builder:
                 builder();
                 break;
+            case R.id.btn_factory:
+                factory();
+                break;
+
         }
+    }
+    /*
+     * 工厂模式
+     */
+    private void factory() {
+        Factory factory = new ConcreateFactory();
+        Product product = new ProductA();
+        product.method();
+
     }
 
     /**
