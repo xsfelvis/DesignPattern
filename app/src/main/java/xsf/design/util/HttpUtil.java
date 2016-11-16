@@ -20,7 +20,7 @@ import xsf.design.R;
 
 
 /**
- * Author: xsf
+ * Author: 彩笔学长
  * Time: created at 2016/4/24.
  * Email: xsf_uestc_ncl@163.com
  */

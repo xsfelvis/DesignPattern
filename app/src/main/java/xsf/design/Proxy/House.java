@@ -8,9 +8,8 @@ import java.text.SimpleDateFormat;
 import xsf.design.util.Constant;
 
 /**
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/12.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class House implements IHouse {
 

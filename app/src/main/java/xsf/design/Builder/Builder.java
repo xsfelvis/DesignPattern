@@ -2,9 +2,8 @@ package xsf.design.Builder;
 
 /**
  * 抽象builder
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public abstract class Builder {
     //设置主机

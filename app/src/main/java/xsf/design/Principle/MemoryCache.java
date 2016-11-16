@@ -5,9 +5,8 @@ import android.util.LruCache;
 
 /**
  * 内存缓存
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class MemoryCache implements IImageCache {
     private LruCache<String, Bitmap> mMemoryCache;

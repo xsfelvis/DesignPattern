@@ -10,9 +10,8 @@ import xsf.design.util.Constant;
 
 /**
  * 动态代理
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/12.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class ProxyHandler implements InvocationHandler {
 

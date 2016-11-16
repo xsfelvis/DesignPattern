@@ -1,9 +1,8 @@
 package xsf.design.Strategy;
 
 /**
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public interface IStrategy {
     //体现很好的单一职责
