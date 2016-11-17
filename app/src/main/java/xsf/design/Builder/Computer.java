@@ -20,9 +20,7 @@ public abstract class Computer {
         this.disPlay = disPlay;
     }
 
-    public  void setOs(String os){
-        this.os = os;
-    }
+    public void setOs(String os){this.os = os;}
 
     @Override
     public String toString() {

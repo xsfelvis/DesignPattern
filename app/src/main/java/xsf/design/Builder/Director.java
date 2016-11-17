@@ -11,9 +11,10 @@ public class Director {
         this.builder = builder;
     }
 
-    public void  construct(String board,String display){
+    public void  construct(String board,String display,String os){
         builder.buildBoard(board);
         builder.buildDisplay(display);
+        builder.buildos(os);
         builder.create();
     }
 

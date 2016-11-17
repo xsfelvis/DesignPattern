@@ -5,27 +5,23 @@ package xsf.design.Builder;
  * Time: created at 2016/9/13.
  */
 public class Win7Builder extends Builder {
-    private WindowsComputer windows = new WindowsComputer();
+    private Computer windows = new WindowsComputer();
 
     @Override
-    public Win7Builder buildBoard(String board) {
+    public void buildBoard(String board) {
         windows.setBoard(board);
-        return this;
-
     }
 
     @Override
-    public Win7Builder buildDisplay(String display) {
+    public void buildDisplay(String display) {
         windows.setDisPlay(display);
-        return this;
-
     }
 
     @Override
-    public Builder buildos(String os) {
+    public void buildos(String os) {
         windows.setOs(os);
-        return this;
     }
+
 
     @Override
     public Computer create() {

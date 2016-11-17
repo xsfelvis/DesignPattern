@@ -77,9 +77,6 @@ public class MainActivity extends BaseActvity {
             case R.id.btn_strategy:
                 strategy();
                 break;
-            case R.id.btn_builder:
-                builder();
-                break;
             case R.id.btn_factory:
                 factory();
                 break;
@@ -96,20 +93,6 @@ public class MainActivity extends BaseActvity {
 
     }
 
-    /**
-     * 建造者模式
-     */
-    private void builder() {
-        Builder builder = new Win7Builder();
-        //Director pcDirector = new Director(builder);
-       // pcDirector.construct("i7", "sunsang");
-        //System.out.printf("pc config " + pcDirector.toString());
-        builder.buildBoard("i7").buildDisplay("sansung").buildos("win7 64").create();
-        //System.out.printf("pc config " + builder.buildBoard("i7").buildDisplay("sansung").create().toString());
-        Log.i("builder",builder.buildBoard("i7").buildDisplay("sansung").create().toString());
-
-
-    }
 
     /**
      * 六大原则
