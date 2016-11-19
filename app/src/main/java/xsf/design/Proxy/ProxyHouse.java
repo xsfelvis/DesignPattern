@@ -2,7 +2,7 @@ package xsf.design.Proxy;
 
 import android.util.Log;
 
-import xsf.design.util.Constant;
+import xsf.design.Util.Constant;
 
 /**
  * Author: 彩笔学长
