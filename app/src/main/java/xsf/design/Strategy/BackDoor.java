@@ -11,6 +11,6 @@ import xsf.design.util.Constant;
 public class BackDoor implements IStrategy {
     @Override
     public void useStrategy() {
-        Log.i(Constant.STRATEGY, "Use Backdoor: look for qiao help!");
+        System.out.println("Use Backdoor: look for qiao help!");
     }
 }

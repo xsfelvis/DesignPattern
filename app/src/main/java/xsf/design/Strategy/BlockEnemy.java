@@ -12,6 +12,6 @@ public class BlockEnemy implements IStrategy {
 
     @Override
     public void useStrategy() {
-        Log.i(Constant.STRATEGY, "Use Sun: look for sun help!");
+        System.out.println("Use Sun: look for sun help!");
     }
 }

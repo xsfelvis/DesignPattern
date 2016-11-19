@@ -13,7 +13,6 @@ public class GreenLight implements IStrategy {
 
     @Override
     public void useStrategy() {
-        Log.i(Constant.STRATEGY, "Use GreenLignt: look for guotai help!");
-
+        System.out.println("Use GreenLignt: look for guotai help!");
     }
 }

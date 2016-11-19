@@ -7,6 +7,9 @@ package xsf.design.Strategy;
 public class StrategyManager {
     private IStrategy strategy;
 
+    public StrategyManager() {
+    }
+
     public StrategyManager(IStrategy strategy) {
         this.strategy = strategy;
     }
