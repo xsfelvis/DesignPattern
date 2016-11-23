@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,45 +10,62 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="xsf.design.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="设计模式学习源码请参阅src对应的包"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp" />
+
     <Button
         android:id="@+id/btn_principle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="六大原则"/>
+        android:text="六大原则" />
 
     <Button
         android:id="@+id/btn_proxy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="proxy(普通代理)"/>
+        android:text="proxy(普通代理)" />
 
     <Button
         android:id="@+id/btn_dynicprocy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="dycproxy（动态代理）"/>
+        android:text="dycproxy（动态代理）" />
 
     <Button
         android:id="@+id/btn_strategy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="strategy（策略模式）"/>
+        android:text="strategy（策略模式）" />
 
     <Button
         android:id="@+id/btn_builder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="buildr（建造者模式）"/>
+        android:text="buildr（建造者模式）" />
+
     <Button
         android:id="@+id/btn_factory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="factory（工厂模式）"/>
+        android:text="factory（工厂模式）" />
+
+    <Button
+        android:id="@+id/btn_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="State(状态模式)" />
+
     <ImageView
-        android:layout_gravity="center_horizontal"
         android:id="@+id/imgProfile"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
 
 
 </LinearLayout>

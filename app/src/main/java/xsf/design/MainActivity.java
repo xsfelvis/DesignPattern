@@ -6,8 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import xsf.design.Builder.Builder;
-import xsf.design.Builder.Win7Builder;
+import state.LoginActvity;
 import xsf.design.Factory.ConcreateFactory;
 import xsf.design.Factory.Factory;
 import xsf.design.Factory.Product;
@@ -35,6 +34,7 @@ public class MainActivity extends BaseActvity {
     private Button btn_strtegy;
     private Button btn_builder;
     private Button btn_factory;
+    private Button btn_state;
 
     private ImageView imgProfile;
 
@@ -60,6 +60,8 @@ public class MainActivity extends BaseActvity {
         btn_builder.setOnClickListener(this);
         btn_factory = IfindViewById(R.id.btn_factory);
         btn_factory.setOnClickListener(this);
+        btn_state = IfindViewById(R.id.btn_state);
+        btn_state.setOnClickListener(this);
     }
 
     @Override
@@ -79,6 +81,10 @@ public class MainActivity extends BaseActvity {
                 break;
             case R.id.btn_factory:
                 factory();
+                break;
+            case R.id.btn_state:
+                launchActvity(LoginActvity.class);
+            default:
                 break;
 
         }
