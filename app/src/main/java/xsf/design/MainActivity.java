@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import state.LoginActvity;
+import xsf.design.State.LoginActvity;
 import xsf.design.Factory.ConcreateFactory;
 import xsf.design.Factory.Factory;
 import xsf.design.Factory.Product;
@@ -24,8 +24,8 @@ import xsf.design.Strategy.BackDoor;
 import xsf.design.Strategy.BlockEnemy;
 import xsf.design.Strategy.GreenLight;
 import xsf.design.Strategy.StrategyManager;
-import xsf.design.base.BaseActvity;
-import xsf.design.util.Constant;
+import xsf.design.Base.BaseActvity;
+import xsf.design.Util.Constant;
 
 public class MainActivity extends BaseActvity {
     private Button btn_principle;

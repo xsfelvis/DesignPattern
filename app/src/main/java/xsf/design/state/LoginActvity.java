@@ -1,12 +1,13 @@
-package state;
+package xsf.design.State;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import xsf.design.Base.BaseActvity;
 import xsf.design.R;
-import xsf.design.base.BaseActvity;
+
 
 public class LoginActvity extends BaseActvity {
 

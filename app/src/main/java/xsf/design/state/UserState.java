@@ -1,4 +1,4 @@
-package state;
+package xsf.design.State;
 
 import android.content.Context;
 
