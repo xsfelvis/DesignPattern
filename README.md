@@ -78,3 +78,26 @@ http://www.cnblogs.com/xiaoluo501395377/p/3383130.html
 
 《设计模式之禅》 策略模式
 
+
+##单例模式
+
+1、普通写法
+
+使用volitate关键字+双重枷锁(DLC)
+
+2、推荐更加优雅的写法
+
+静态内部类的单例模式
+
+    `public static HttpUtil getInstance() {
+        return HttpUtilHolder.sInstance;
+    }
+    /**
+     * 静态内部类
+     */
+    private static class HttpUtilHolder {
+        private static final HttpUtil sInstance = new HttpUtil();
+    }`
+
+3、使用容器实现单例模式
+
