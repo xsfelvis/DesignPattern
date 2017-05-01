@@ -1,4 +1,4 @@
-package xsf.design.Strategy;
+package xsf.design.strategy;
 
 import android.util.Log;
 
@@ -9,10 +9,9 @@ import xsf.design.util.Constant;
  * Time: created at 2016/9/13.
  * Copyright 2016 Netease. All rights reserved.
  */
-public class BlockEnemy implements IStrategy {
-
+public class BackDoor implements IStrategy {
     @Override
     public void useStrategy() {
-        Log.i(Constant.STRATEGY, "Use Sun: look for sun help!");
+        Log.i(Constant.STRATEGY, "Use Backdoor: look for qiao help!");
     }
 }

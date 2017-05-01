@@ -1,4 +1,4 @@
-package xsf.design.Builder;
+package xsf.design.builder;
 
 /**
  * 抽象builder

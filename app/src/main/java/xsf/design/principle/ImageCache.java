@@ -1,4 +1,4 @@
-package xsf.design.Principle;
+package xsf.design.principle;
 
 import android.graphics.Bitmap;
 import android.util.LruCache;

@@ -1,4 +1,4 @@
-package xsf.design.Strategy;
+package xsf.design.strategy;
 
 /**
  * Author: hzxushangfei

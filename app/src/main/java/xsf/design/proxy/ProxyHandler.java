@@ -1,4 +1,4 @@
-package xsf.design.Proxy;
+package xsf.design.proxy;
 
 import android.util.Log;
 

@@ -1,4 +1,4 @@
-package xsf.design.Proxy;
+package xsf.design.proxy;
 
 import android.os.SystemClock;
 import android.util.Log;

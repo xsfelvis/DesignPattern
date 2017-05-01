@@ -1,4 +1,4 @@
-package xsf.design.Principle;
+package xsf.design.principle;
 
 import java.io.Closeable;
 import java.io.IOException;

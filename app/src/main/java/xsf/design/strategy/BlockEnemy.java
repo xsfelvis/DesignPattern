@@ -1,4 +1,4 @@
-package xsf.design.Strategy;
+package xsf.design.strategy;
 
 import android.util.Log;
 
@@ -9,12 +9,10 @@ import xsf.design.util.Constant;
  * Time: created at 2016/9/13.
  * Copyright 2016 Netease. All rights reserved.
  */
-public class GreenLight implements IStrategy {
-
+public class BlockEnemy implements IStrategy {
 
     @Override
     public void useStrategy() {
-        Log.i(Constant.STRATEGY, "Use GreenLignt: look for guotai help!");
-
+        Log.i(Constant.STRATEGY, "Use Sun: look for sun help!");
     }
 }
