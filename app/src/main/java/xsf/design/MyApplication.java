@@ -3,7 +3,7 @@ package xsf.design;
 import android.app.Application;
 
 /**
- * Author: xsf
+ * Author:彩笔学长
  * Time: created at 2016/4/22.
  * Email: xsf_uestc_ncl@163.com
  */

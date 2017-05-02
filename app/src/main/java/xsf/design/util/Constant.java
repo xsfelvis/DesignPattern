@@ -1,9 +1,8 @@
-package xsf.design.util;
+package xsf.design.Util;
 
 /**
- * Author: hzxushangfei
+ * Author:彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class Constant {
     public static final String PROXY = "proxy";

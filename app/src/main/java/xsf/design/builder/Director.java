@@ -1,9 +1,8 @@
 package xsf.design.builder;
 
 /**
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class Director {
     Builder builder = null;
@@ -12,9 +11,10 @@ public class Director {
         this.builder = builder;
     }
 
-    public void  construct(String board,String display){
+    public void  construct(String board,String display,String os){
         builder.buildBoard(board);
         builder.buildDisplay(display);
+        builder.buildos(os);
         builder.create();
     }
 

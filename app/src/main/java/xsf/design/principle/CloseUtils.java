@@ -4,9 +4,8 @@ import java.io.Closeable;
 import java.io.IOException;
 
 /**
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public final class CloseUtils {
     private CloseUtils() {

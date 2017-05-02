@@ -1,18 +1,13 @@
 package xsf.design.strategy;
 
-import android.util.Log;
-
-import xsf.design.util.Constant;
-
 /**
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class BlockEnemy implements IStrategy {
 
     @Override
     public void useStrategy() {
-        Log.i(Constant.STRATEGY, "Use Sun: look for sun help!");
+        System.out.println("Use Sun: look for sun help!");
     }
 }

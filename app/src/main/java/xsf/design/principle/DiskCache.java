@@ -7,9 +7,8 @@ import java.io.FileOutputStream;
 
 /**
  * 本地缓存
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class DiskCache implements IImageCache {
     static final String cacheDir = "sdcard/cache/";

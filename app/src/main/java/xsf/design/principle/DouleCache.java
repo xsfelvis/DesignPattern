@@ -3,9 +3,8 @@ package xsf.design.principle;
 import android.graphics.Bitmap;
 
 /**
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public class DouleCache implements IImageCache {
     //内存缓存

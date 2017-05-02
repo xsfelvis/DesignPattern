@@ -1,4 +1,4 @@
-package xsf.design.base;
+package xsf.design.Base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import xsf.design.util.AppManager;
+import xsf.design.Util.AppManager;
 
 
 /**

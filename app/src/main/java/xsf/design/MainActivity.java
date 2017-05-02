@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+<<<<<<< HEAD
 import xsf.design.builder.Builder;
 import xsf.design.builder.Win7Builder;
 import xsf.design.principle.DiskCache;
@@ -23,6 +24,28 @@ import xsf.design.strategy.GreenLight;
 import xsf.design.strategy.StrategyManager;
 import xsf.design.base.BaseActvity;
 import xsf.design.util.Constant;
+=======
+import xsf.design.State.LoginActvity;
+import xsf.design.Factory.ConcreateFactory;
+import xsf.design.Factory.Factory;
+import xsf.design.Factory.Product;
+import xsf.design.Factory.ProductA;
+import xsf.design.Principle.DiskCache;
+import xsf.design.Principle.DouleCache;
+import xsf.design.Principle.IImageCache;
+import xsf.design.Principle.ImageLoader;
+import xsf.design.Principle.MemoryCache;
+import xsf.design.Proxy.dynicProxy.House;
+import xsf.design.Proxy.dynicProxy.IHouse;
+import xsf.design.Proxy.dynicProxy.ProxyHandler;
+import xsf.design.Proxy.dynicProxy.ProxyHouse;
+import xsf.design.Strategy.BackDoor;
+import xsf.design.Strategy.BlockEnemy;
+import xsf.design.Strategy.GreenLight;
+import xsf.design.Strategy.StrategyManager;
+import xsf.design.Base.BaseActvity;
+import xsf.design.Util.Constant;
+>>>>>>> 364264d824790391cbb0cd3826e13d1b82d9ae22
 
 public class MainActivity extends BaseActvity {
     private Button btn_principle;
@@ -30,6 +53,8 @@ public class MainActivity extends BaseActvity {
     private Button btn_dynproxy;
     private Button btn_strtegy;
     private Button btn_builder;
+    private Button btn_factory;
+    private Button btn_state;
 
     private ImageView imgProfile;
 
@@ -53,6 +78,10 @@ public class MainActivity extends BaseActvity {
         imgProfile = IfindViewById(R.id.imgProfile);
         btn_builder = IfindViewById(R.id.btn_builder);
         btn_builder.setOnClickListener(this);
+        btn_factory = IfindViewById(R.id.btn_factory);
+        btn_factory.setOnClickListener(this);
+        btn_state = IfindViewById(R.id.btn_state);
+        btn_state.setOnClickListener(this);
     }
 
     @Override
@@ -70,26 +99,26 @@ public class MainActivity extends BaseActvity {
             case R.id.btn_strategy:
                 strategy();
                 break;
-            case R.id.btn_builder:
-                builder();
+            case R.id.btn_factory:
+                factory();
                 break;
+            case R.id.btn_state:
+                launchActvity(LoginActvity.class);
+            default:
+                break;
+
         }
     }
-
-    /**
-     * 建造者模式
+    /*
+     * 工厂模式
      */
-    private void builder() {
-        Builder builder = new Win7Builder();
-        //Director pcDirector = new Director(builder);
-       // pcDirector.construct("i7", "sunsang");
-        //System.out.printf("pc config " + pcDirector.toString());
-        builder.buildBoard("i7").buildDisplay("sansung").buildos("win7 64").create();
-        //System.out.printf("pc config " + builder.buildBoard("i7").buildDisplay("sansung").create().toString());
-        Log.i("builder",builder.buildBoard("i7").buildDisplay("sansung").create().toString());
-
+    private void factory() {
+        Factory factory = new ConcreateFactory();
+        Product product = new ProductA();
+        product.method();
 
     }
+
 
     /**
      * 六大原则

@@ -2,9 +2,8 @@ package xsf.design.builder;
 
 /**
  * 计算机的抽象类
- * Author: hzxushangfei
+ * Author: 彩笔学长
  * Time: created at 2016/9/13.
- * Copyright 2016 Netease. All rights reserved.
  */
 public abstract class Computer {
     protected String board;
@@ -21,9 +20,7 @@ public abstract class Computer {
         this.disPlay = disPlay;
     }
 
-    public  void setOs(String os){
-        this.os = os;
-    }
+    public void setOs(String os){this.os = os;}
 
     @Override
     public String toString() {
