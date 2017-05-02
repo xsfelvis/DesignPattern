@@ -20,10 +20,10 @@ import xsf.design.base.BaseActvity;
 import xsf.design.util.Constant;
 =======
 import xsf.design.State.LoginActvity;
-import xsf.design.Factory.one.ConcreateFactory;
-import xsf.design.Factory.one.Factory;
-import xsf.design.Factory.one.Product;
-import xsf.design.Factory.one.ProductA;
+import xsf.design.factory.one.ConcreateFactory;
+import xsf.design.factory.one.Factory;
+import xsf.design.factory.one.Product;
+import xsf.design.factory.one.ProductA;
 import xsf.design.Principle.DiskCache;
 import xsf.design.Principle.DouleCache;
 import xsf.design.Principle.IImageCache;
