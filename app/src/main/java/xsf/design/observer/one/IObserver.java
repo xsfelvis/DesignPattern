@@ -1,4 +1,4 @@
-package xsf.design.observer;
+package xsf.design.observer.one;
 
 /**
  * Author: xushangfei

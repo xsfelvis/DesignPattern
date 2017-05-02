@@ -1,4 +1,4 @@
-package xsf.design.Observer;
+package xsf.design.observer.one;
 
 import java.util.Observable;
 
