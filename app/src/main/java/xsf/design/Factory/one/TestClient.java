@@ -1,9 +1,4 @@
-package xsf.design.Factory;
-
-import xsf.design.Factory.ConcreateFactory;
-import xsf.design.Factory.Factory;
-import xsf.design.Factory.Product;
-import xsf.design.Factory.ProductA;
+package xsf.design.Factory.one;
 
 /**
  * Author: 彩笔学长

@@ -1,4 +1,4 @@
-package xsf.design.Factory;
+package xsf.design.Factory.one;
 
 /**
  * Author: 彩笔学长

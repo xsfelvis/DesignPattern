@@ -1,4 +1,4 @@
-package xsf.design.command;
+package xsf.design.command.one;
 
 /**
  * Author: xushangfei
