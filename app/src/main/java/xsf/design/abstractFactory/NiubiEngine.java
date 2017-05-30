@@ -5,7 +5,7 @@ package xsf.design.abstractFactory;
  * Time: created at 16/11/2016.
  */
 
-public class NiuBiEngine implements IEngine{
+public class NiubiEngine implements IEngine{
     @Override
     public void engine() {
         System.out.println("进口牛逼发动机");

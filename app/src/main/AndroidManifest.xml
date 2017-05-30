@@ -17,8 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="xsf.design.State.LoginActvity" />
-        <activity android:name="xsf.design.State.ContentActivity"></activity>
+        <activity android:name="xsf.design.state.LoginActvity" />
+        <activity android:name="xsf.design.state.ContentActivity"></activity>
     </application>
 
 </manifest>

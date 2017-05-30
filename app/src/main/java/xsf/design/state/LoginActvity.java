@@ -1,11 +1,11 @@
-package xsf.design.State;
+package xsf.design.state;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import xsf.design.Base.BaseActvity;
+import xsf.design.base.BaseActvity;
 import xsf.design.R;
 
 

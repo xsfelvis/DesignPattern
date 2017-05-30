@@ -6,37 +6,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-<<<<<<< HEAD
+import xsf.design.factory.one.ConcreateFactory;
+import xsf.design.factory.one.Factory;
+import xsf.design.factory.one.Product;
+import xsf.design.factory.one.ProductA;
 import xsf.design.principle.DiskCache;
 import xsf.design.principle.DouleCache;
 import xsf.design.principle.IImageCache;
 import xsf.design.principle.ImageLoader;
 import xsf.design.principle.MemoryCache;
+import xsf.design.proxy.dynicProxy.House;
+import xsf.design.proxy.dynicProxy.IHouse;
+import xsf.design.proxy.dynicProxy.ProxyHandler;
+import xsf.design.proxy.dynicProxy.ProxyHouse;
 import xsf.design.strategy.BackDoor;
 import xsf.design.strategy.BlockEnemy;
 import xsf.design.strategy.GreenLight;
 import xsf.design.strategy.StrategyManager;
-import xsf.design.base.BaseActvity;
 import xsf.design.util.Constant;
-=======
-import xsf.design.State.LoginActvity;
-import xsf.design.factory.one.ConcreateFactory;
-import xsf.design.factory.one.Factory;
-import xsf.design.factory.one.Product;
-import xsf.design.factory.one.ProductA;
-import xsf.design.Principle.DiskCache;
-import xsf.design.Principle.DouleCache;
-import xsf.design.Principle.IImageCache;
-import xsf.design.Principle.ImageLoader;
-import xsf.design.Principle.MemoryCache;
-import xsf.design.Strategy.BackDoor;
-import xsf.design.Strategy.BlockEnemy;
-import xsf.design.Strategy.GreenLight;
-import xsf.design.Strategy.StrategyManager;
-import xsf.design.Base.BaseActvity;
->>>>>>> 364264d824790391cbb0cd3826e13d1b82d9ae22
 
-public class MainActivity extends BaseActvity {
+
+public class MainActivity extends xsf.design.base.BaseActvity {
     private Button btn_principle;
     private Button btn_proxy;
     private Button btn_dynproxy;
@@ -92,7 +82,7 @@ public class MainActivity extends BaseActvity {
                 factory();
                 break;
             case R.id.btn_state:
-                launchActvity(LoginActvity.class);
+                launchActvity(xsf.design.state.LoginActvity.class);
             default:
                 break;
 

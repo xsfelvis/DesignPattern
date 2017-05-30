@@ -13,7 +13,7 @@ public class BMWFactroy extends CarFactory{
 
     @Override
     public IEngine createEngine() {
-        return new NiuBiEngine();
+        return new NiubiEngine();
     }
 
     @Override

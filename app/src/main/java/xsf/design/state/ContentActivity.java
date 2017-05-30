@@ -1,11 +1,11 @@
-package xsf.design.State;
+package xsf.design.state;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import xsf.design.R;
-import xsf.design.Base.BaseActvity;
+import xsf.design.base.BaseActvity;
 
 public class ContentActivity extends BaseActvity {
     private Button btn_push, btn_logout;
