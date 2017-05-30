@@ -1,11 +1,11 @@
-package xsf.design.Proxy.dynicProxy;
+package xsf.design.proxy.dynicProxy;
 
 import android.os.SystemClock;
 import android.util.Log;
 
 import java.text.SimpleDateFormat;
 
-import xsf.design.Util.Constant;
+import xsf.design.util.Constant;
 
 /**
  * Author: 彩笔学长

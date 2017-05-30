@@ -1,4 +1,4 @@
-package xsf.design.Util;
+package xsf.design.util;
 
 /**
  * Author:彩笔学长

@@ -1,4 +1,4 @@
-package xsf.design.Proxy.dynicProxy2;
+package xsf.design.proxy.dynicProxy2;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package xsf.design.Proxy.staticProxy;
+package xsf.design.proxy.staticProxy;
 
 /**
  * Author: 彩笔学长

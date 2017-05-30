@@ -34,7 +34,6 @@ import xsf.design.Strategy.BlockEnemy;
 import xsf.design.Strategy.GreenLight;
 import xsf.design.Strategy.StrategyManager;
 import xsf.design.Base.BaseActvity;
-import xsf.design.Util.Constant;
 >>>>>>> 364264d824790391cbb0cd3826e13d1b82d9ae22
 
 public class MainActivity extends BaseActvity {

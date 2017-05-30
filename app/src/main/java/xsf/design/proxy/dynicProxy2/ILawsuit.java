@@ -1,4 +1,4 @@
-package xsf.design.Proxy.dynicProxy2;
+package xsf.design.proxy.dynicProxy2;
 
 /**
  * Author: 彩笔学长

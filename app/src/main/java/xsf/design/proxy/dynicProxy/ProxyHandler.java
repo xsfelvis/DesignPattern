@@ -1,4 +1,4 @@
-package xsf.design.Proxy.dynicProxy;
+package xsf.design.proxy.dynicProxy;
 
 import android.util.Log;
 
@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-import xsf.design.Util.Constant;
+import xsf.design.util.Constant;
 
 /**
  * 动态代理

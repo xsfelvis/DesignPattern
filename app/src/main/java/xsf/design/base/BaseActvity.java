@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import xsf.design.Util.AppManager;
+import xsf.design.util.AppManager;
 
 
 /**

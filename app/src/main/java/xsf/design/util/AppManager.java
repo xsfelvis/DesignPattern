@@ -1,4 +1,4 @@
-package xsf.design.Util;
+package xsf.design.util;
 
 import android.app.Activity;
 import android.content.Context;

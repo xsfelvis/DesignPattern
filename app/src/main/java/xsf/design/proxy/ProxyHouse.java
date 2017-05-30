@@ -1,9 +1,5 @@
 package xsf.design.proxy;
 
-import android.util.Log;
-
-import xsf.design.util.Constant;
-
 /**
  * Author: hzxushangfei
  * Time: created at 2016/9/12.
@@ -20,14 +16,14 @@ public class ProxyHouse implements IHouse {
 
     @Override
     public void getHouseInfo() {
-        Log.i(Constant.PROXY, "searching");
+
         house.getHouseInfo();
-        Log.i(Constant.PROXY, "search finished");
+
     }
 
     @Override
     public void signContract() {
-        Log.i(Constant.PROXY, "prepare contract");
+        
         house.signContract();
 
     }

@@ -1,4 +1,4 @@
-package xsf.design.Util;
+package xsf.design.util;
 
 import android.os.Handler;
 import android.os.Looper;
